@@ -1,0 +1,12 @@
+[
+  {
+    "id": "super_admin",
+    "name": "Super Admin",
+    "initialPathname": "/"
+  },
+  {
+    "id": "user",
+    "name": "Usuario",
+    "initialPathname": "/"
+  }
+]

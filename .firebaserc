@@ -1,0 +1,28 @@
+{
+  "projects": {
+    "default": "jetcash-prod",
+    "dev": "jetcash-dev"
+  },
+  "targets": {
+    "jetcash-prod": {
+      "hosting": {
+        "app": [
+          "jetcash"
+        ],
+         "api": [
+           "api-jetcash"
+         ]
+      }
+    },
+    "jetcash-dev": {
+      "hosting": {
+        "app": [
+          "jetcash-dev"
+        ],
+        "api": [
+           "api-jetcash-dev"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "common": {
+    "title": "JetCash",
+    "contactData": {
+      "emails": {
+        "sales": "JetCash@gmail.com"
+      },
+      "poweredBy": {
+        "name": "IUBI COMPANY",
+        "webUrl": "https://iubi.pe"
+      }
+    }
+  },
+  "development": {
+    "version": "0.0.1",
+    "firebaseApp": {
+      "apiKey": "AIzaSyDpciBtrYlCNg978EacFiDTBgCJre5baW0",
+      "authDomain": "jetcash-prod.firebaseapp.com",
+      "projectId": "jetcash-prod",
+      "storageBucket": "jetcash-prod.firebasestorage.app",
+      "messagingSenderId": "897370648998",
+      "appId": "1:897370648998:web:ca2caf3bc8467dded19f67",
+      "measurementId": "G-YE5K6C3XRZ"
+    },
+    "mapsApiKey": "AIzaSyAY2QCPZzFt0DzzRAxIhvY9JB8XkDbX3aU",
+    "publicHostingUrl": "-",
+    "publicStorageUrl": "-",
+    "buckets": {
+      "documents": "gs://jetcash-documents-dev"
+    },
+    "apiUrl": "https://api-jetcash.web.app"
+  },
+  "production": {
+    "version": "0.0.1",
+    "firebaseApp": {
+      "apiKey": "AIzaSyDpciBtrYlCNg978EacFiDTBgCJre5baW0",
+      "authDomain": "jetcash-prod.firebaseapp.com",
+      "projectId": "jetcash-prod",
+      "storageBucket": "jetcash-prod.firebasestorage.app",
+      "messagingSenderId": "897370648998",
+      "appId": "1:897370648998:web:ca2caf3bc8467dded19f67",
+      "measurementId": "G-YE5K6C3XRZ"
+    },
+    "mapsApiKey": "AIzaSyAY2QCPZzFt0DzzRAxIhvY9JB8XkDbX3aU",
+    "publicHostingUrl": "-",
+    "publicStorageUrl": "-",
+    "buckets": {
+      "documents": "gs://jetcash-documents"
+    },
+    "apiUrl": "https://api-jetcash.web.app"
+  }
+}

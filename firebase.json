@@ -1,0 +1,70 @@
+{
+  "hosting": [
+    {
+      "public": "packages/hosting/build",
+      "target": "app",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "predeploy": [
+        "yarn hosting build"
+      ],
+      "headers": [
+        {
+          "source": "/index.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "/static/**/*.@(css|js)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=2628000"
+            }
+          ]
+        }
+      ],
+      "redirects": [],
+      "rewrites": [
+        {
+          "source": "/api/**",
+          "function": "api"
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "api",
+      "rewrites": [
+        {
+          "source": "/**",
+          "function": "api"
+        }
+      ],
+      "headers": []
+    }
+  ],
+  "firestore": {
+    "indexes": "firestore.indexes.json",
+    "rules": "firestore.rules"
+  },
+  "extensions": {
+    "user-documents": "firebase/storage-resize-images@0.2.5"
+  },
+  "functions": {
+    "predeploy": [
+      "yarn functions build"
+    ],
+    "source": "packages/functions"
+  }
+}

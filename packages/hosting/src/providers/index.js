@@ -3,4 +3,3 @@ export * from "./ConfigsInitializer";
 export * from "./GlobalDataProvider";
 export * from "./AuthenticationProvider";
 export * from "./ModalProvider";
-

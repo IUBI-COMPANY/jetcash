@@ -1,9 +1,9 @@
-import React, {createContext, useContext, useEffect} from "react";
-import {useCollectionData} from "react-firebase-hooks/firestore";
-import {useAuthentication} from "./AuthenticationProvider";
-import {notification, Spinner} from "../components";
-import {orderBy} from "lodash";
-import {usersRef,} from "../firebase/collections";
+import React, { createContext, useContext, useEffect } from "react";
+import { useCollectionData } from "react-firebase-hooks/firestore";
+import { useAuthentication } from "./AuthenticationProvider";
+import { notification, Spinner } from "../components";
+import { orderBy } from "lodash";
+import { usersRef } from "../firebase/collections";
 
 const GlobalDataContext = createContext({
   users: [],
@@ -16,11 +16,9 @@ export const GlobalDataProvider = ({ children }) => {
     authUser ? usersRef.where("isDeleted", "==", false) : null,
   );
 
-  const error =
-    usersError;
+  const error = usersError;
 
-  const loading =
-    usersLoading;
+  const loading = usersLoading;
 
   useEffect(() => {
     error && notification({ type: "error" });

@@ -13,7 +13,7 @@ export const DrawerLayout = ({
 }) => {
   const onClickHome = () => {
     onSetIsVisibleDrawer(false);
-    onNavigateTo("/home");
+    onNavigateTo("/");
   };
 
   const items = [
